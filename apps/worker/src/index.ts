@@ -26,8 +26,8 @@ const deleteDirectory = async (dirPath: string): Promise<void> => {
 };
 
 const main = async () => {
-  const assetsDir = path.join(__dirname, '..', 'assets', 'element_classes');
-  const resultsDir = path.join(__dirname, '..', 'assets', 'element_classes_copy');
+  const assetsDir = path.join(__dirname, '..', 'assets', 'original');
+  const resultsDir = path.join(__dirname, '..', 'assets', 'copy');
 
   // Ensure the empty directory exists
   await deleteDirectory(resultsDir);
