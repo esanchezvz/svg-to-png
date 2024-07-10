@@ -1,0 +1,19 @@
+{
+  "name": "@repository/worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon --exec \"ts-node ./src/index.ts\" --watch src --ext ts",
+    "start": "ts-node --transpile-only ./src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@repository/tsconfig": "workspace:*",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
