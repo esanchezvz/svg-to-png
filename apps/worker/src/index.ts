@@ -53,6 +53,8 @@ const main = async () => {
         await fs.copyFile(p, destination);
       }
     } catch (error) {
+      await fs.mkdir(path.dirname(destination), { recursive: true });
+      await fs.copyFile(p, destination);
       console.log(`Error: ${(error as any).message}`);
       badPaths.push(p);
     }
