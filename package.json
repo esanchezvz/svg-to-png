@@ -1,0 +1,24 @@
+{
+  "name": "monorepo-starter",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "format:check": "prettier --check \"**/*.{mjs,js,jsx,ts,tsx,md,json}\" --log-level warn",
+    "format": "prettier --write \"**/*.{mjs,js,jsx,ts,tsx,md,json}\" --log-level error",
+    "typecheck": "turbo typecheck"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
+    "@types/node": "^20.13.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.0",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "turbo": "latest",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=20"
+  }
+}
